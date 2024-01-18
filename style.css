@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color:#456280;
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(kepek/v3.jpg);
+    width:90%;
+    max-width:900px;
+    margin:auto;
+}
+
+h2{
+    text-align: center;
+}
+
+.szoveg{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+main{
+    background-color:#dad5ca ;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "h h"
+    "n n"
+    "s a"
+    "f f";
+}
+
+nav ul{
+    list-style-type:none;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+
+header{
+    grid-area: h;
+}
+
+article{
+    grid-area: a;
+}
+
+aside{
+    grid-area: s;
+}
+
+nav{
+grid-area: n;
+}
+
+footer{
+    grid-area: f;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    padding:5px;
+    margin:5px;
+}
+
+.kepek{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kep1{
+    border:2px solid #456280;
+}
+
+.kep2{
+    border:2px solid #456280;
+}
+
+.kep3{
+    border:2px solid #456280;
+}
+
+.kep4{
+    border:2px solid #456280;
+}
+
+img{
+    width:100%;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-right:5px;
+    padding-left:5px;
+   
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th{
+    border: 1px solid #456280;
+    color:#dad5ca;
+    background-color:#456280 ;
+
+}
+
+table, td{
+    border: 1px solid #dad5ca ;
+}
+
+nav li{
+    margin-top: 15px;
+}
+
+nav a:hover{
+    background-color: #f3efe9;
+    color: #456280;
+}
+
+nav a{
+    text-decoration: none;
+    color:#456280;
+    padding: 5px;
+}
+
+footer{
+background-color:#506a85 ;
+text-align:center;
+border:4px solid #506a85;
+color:#dad5ca;
+}
+
+header{
+background-color:#506a85 ;
+border:4px solid #506a85;
+}
+
+@media screen and (max-width: 450px) {
+    body, main {
+      width:100%;
+    }
+    main{ 
+        font-size:12px+5vw;
+        background-color:#dad5ca;
+        display:grid;
+        grid-template-columns:1fr ;
+        grid-template-areas:
+        "h"
+        "n"
+        "a"
+        "s"
+        "f";
+    }
+    nav ul{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:5px;
+    }
+article{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+}
